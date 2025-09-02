@@ -13,7 +13,7 @@ Use the Oracle Database node to automate work in Oracle Database, and integrate 
 On this page, you'll find a list of operations the Oracle Database node supports and links to more resources.
 
 /// note | Credentials
-Refer to [Oracle Database credentials](/../../credentials/oracledb.md) for guidance on setting up authentication. 
+Refer to [Oracle Database credentials](/docs/integrations/builtin/credentials/oracledb.md) for guidance on setting up authentication. 
 ///
 
 --8<-- "/_snippets/integrations/builtin/app-nodes/ai-tools.md"
@@ -33,7 +33,7 @@ Use this operation to delete an entire table or rows in a table.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Select **Delete**.
 - **Schema**: Choose the schema that contains the table you want to work on. Select **From list** to choose the schema from the dropdown list or **By Name** to enter the schema name.
 - **Table**: Choose the table that you want to work on. Select **From list** to choose the table from the dropdown list or **By Name** to enter the table name.
@@ -59,7 +59,7 @@ Use this operation to execute an SQL query.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Execute SQL **Execute SQL**.
 - **Statement**: The SQL statement to execute. You can use n8n [expressions](/code/expressions.md) and positional parameters like `:1`, `:2`, or named parameters like `:name`, `:id` to use with [Bind Variable Placeholder Values](#use-bind-parameters).
 
@@ -77,13 +77,13 @@ Use this operation to insert rows in a table.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Select **Insert**.
 - **Schema**: Choose the schema that contains the table you want to work on. Select **From list** to choose the schema from the dropdown list or **By Name** to enter the schema name.
 - **Table**: Choose the table that you want to work on. Select **From list** to choose the table from the dropdown list or **By Name** to enter the table name.
 - **Mapping Column Mode**: How to map column names to incoming data:
 	- **Map Each Column Manually**: Select the values to use for each column.
-	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
+	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/docs/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
 
 #### Insert options
 
@@ -100,13 +100,13 @@ Use this operation to insert or update rows in a table.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Select **Insert or Update**.
 - **Schema**: Choose the schema that contains the table you want to work on. Select **From list** to choose the schema from the dropdown list or **By Name** to enter the schema name.
 - **Table**: Choose the table that you want to work on. Select **From list** to choose the table from the dropdown list or **By Name** to enter the table name.
 - **Mapping Column Mode**: How to map column names to incoming data:
 	- **Map Each Column Manually**: Select the values to use for each column.
-	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
+	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/docs/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
 
 #### Insert or Update options
 
@@ -122,7 +122,7 @@ Use this operation to select rows in a table.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Select **Select**.
 - **Schema**: Choose the schema that contains the table you want to work on. Select **From list** to choose the schema from the dropdown list or **By Name** to enter the schema name.
 - **Table**: Choose the table that you want to work on. Select **From list** to choose the table from the dropdown list or **By Name** to enter the table name.
@@ -145,13 +145,13 @@ Use this operation to update rows in a table.
 
 Enter these parameters:
 
-- **Credential to connect with**: Create or select an existing [Oracle Database credential](/../../credentials/oracledb.md).
+- **Credential to connect with**: Create or select an existing [Oracle Database credential](/docs/integrations/builtin/credentials/oracledb.md).
 - **Operation**: Select **Update**.
 - **Schema**: Choose the schema that contains the table you want to work on. Select **From list** to choose the schema from the dropdown list or **By Name** to enter the schema name.
 - **Table**: Choose the table that you want to work on. Select **From list** to choose the table from the dropdown list or **By Name** to enter the table name.
 - **Mapping Column Mode**: How to map column names to incoming data:
 	- **Map Each Column Manually**: Select the values to use for each column.
-	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
+	- **Map Automatically**: Automatically map incoming data to matching column names in Oracle Database. The incoming data field names must match the column names in Oracle Database for this to work. If necessary, consider using the [edit fields (set) node](/docs/integrations/builtin/core-nodes/n8n-nodes-base.set.md) before this node to adjust the format as needed.
 
 #### Update options
 
@@ -206,4 +206,4 @@ users, {{ $json.color }}
 
 ## Common issues
 
-For common errors or issues and suggested resolution steps, refer to [Common issues](/n8n-nodes-base.oracledb/common-issues.md).
+For common errors or issues and suggested resolution steps, refer to [Common issues](/docs/integrations/builtin/app-nodes/n8n-nodes-base.oracledb/common-issues.md).

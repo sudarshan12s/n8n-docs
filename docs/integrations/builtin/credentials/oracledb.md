@@ -10,8 +10,8 @@ priority: high
 
 You can use these credentials to authenticate the following nodes:
 
-- [OracleDB](/../app-nodes/n8n-nodes-base.oracledb/index.md)
-- [Agent](/../cluster-nodes/root-nodes/n8n-nodes-langchain.agent/index.md)
+- [OracleDB](/docs/integrations/builtin/app-nodes/n8n-nodes-base.oracledb/index.md)
+- [Agent](/docs/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/index.md)
 
 /// note | Agent node users
 The Agent node doesn't support SSH tunnels.
