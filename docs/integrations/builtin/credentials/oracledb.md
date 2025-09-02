@@ -27,7 +27,7 @@ Create a user account on a [OracleDB](https://docs.oracle.com/en/database/oracle
 
 ## Related resources
 
-Refer to [OracleDB's documentation](https://node-oracledb.readthedocs.io/en/latest/) for more information about the service.
+Refer to [OracleDB's documentation](https://docs.oracle.com/en/database/oracle/oracle-database) for more information about the service.
 
 ## Using database connection
 
@@ -71,4 +71,4 @@ To set up your database connection credential:
 3. If your database uses SSL and you'd like to use **SSL** for the connection, turn this option on in the credential. If you turn it on, enter the information of your OracleDB SSL certificate in these fields:
     1. Enter the output of PEM-encoded wallet file, **ewallet.pem** contents after retaining the new lines. The command `node -e "console.log('{{\"' + require('fs').readFileSync('ewallet.pem', 'utf8').split('\n').join('\\\\n') + '\"}}')"` can be used to dump file contents in the **Wallet Content** field.
 
-Refer to [OracleDB ](https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#mutual-tls-connections-to-oracle-cloud-autonomous-database) for more information on working with TLS connections.
+Refer to [Node OracleDB ](https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#mutual-tls-connections-to-oracle-cloud-autonomous-database) for more information on working with TLS connections.

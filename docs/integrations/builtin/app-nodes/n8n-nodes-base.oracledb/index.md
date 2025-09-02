@@ -197,13 +197,9 @@ You can write a query like:
 SELECT * FROM FRUITS WHERE COLOR = :col
 ```
 
-Then in **Bind Variable Placeholder Values**, provide the field values to use. You can provide fixed values or expressions. For this example, use expressions so the node can pull the email address from each input item in turn:
+Then in **Bind Variable Placeholder Values**, provide the field values to use. You can provide fixed values or expressions. For this example, use expressions so the node can pull the color from each input item in turn:
 
 ```js
 // fruits is an example table name
-users, {{ $json.color }} 
+fruits, {{ $json.color }} 
 ```
-
-## Common issues
-
-For common errors or issues and suggested resolution steps, refer to [Common issues](/docs/integrations/builtin/app-nodes/n8n-nodes-base.oracledb/common-issues.md).

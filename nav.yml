@@ -474,7 +474,6 @@ nav:
         - OpenWeatherMap: integrations/builtin/app-nodes/n8n-nodes-base.openweathermap.md
         - OracleDB:
           - OracleDB: integrations/builtin/app-nodes/n8n-nodes-base.oracledb/index.md
-          - Common issues: integrations/builtin/app-nodes/n8n-nodes-base.oracledb/common-issues.md
         - Oura: integrations/builtin/app-nodes/n8n-nodes-base.oura.md
         - Paddle: integrations/builtin/app-nodes/n8n-nodes-base.paddle.md
         - PagerDuty: integrations/builtin/app-nodes/n8n-nodes-base.pagerduty.md
